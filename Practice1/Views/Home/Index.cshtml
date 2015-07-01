@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="jumbotron">
+    <div class="row">
+    <div class="col-md-2">
+        <img class="img-responsive" src="@Url.Content("~/Content/images/kuro.png")" />
+    </div>
+        <div class="col-md-8" style="text-align:center;">
+            <h1>Kanji-Cat</h1>
+        </div>
+    <div class="col-md-2">
+        <img class="img-responsive" src="@Url.Content("~/Content/images/shiro.png")" />
+    </div>
+        </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>About Kanji-Cat</h2>
+        <p>
+            An educational software for mobile devices, oriented to the self-learning of Kanji for students of basic level Japanese. The app shows different exercises to help in the learning of reading and writing Kanji. It also helps the user to study words and pronunciations using flashcards.
+        </p>
+        <p><a class="btn btn-success" href="@Url.Action("About","Home")">Learn more &raquo;</a></p>
+    </div>
+    
+</div>
